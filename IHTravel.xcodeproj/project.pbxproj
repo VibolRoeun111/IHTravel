@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		17021845217DB33B00CC9CD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17021844217DB33B00CC9CD3 /* AppDelegate.swift */; };
-		17021847217DB33B00CC9CD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17021846217DB33B00CC9CD3 /* ViewController.swift */; };
+		17021847217DB33B00CC9CD3 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17021846217DB33B00CC9CD3 /* homeViewController.swift */; };
 		1702184A217DB33B00CC9CD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17021848217DB33B00CC9CD3 /* Main.storyboard */; };
 		1702184D217DB33B00CC9CD3 /* IHTravel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1702184B217DB33B00CC9CD3 /* IHTravel.xcdatamodeld */; };
 		1702184F217DB33E00CC9CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1702184E217DB33E00CC9CD3 /* Assets.xcassets */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		17021841217DB33B00CC9CD3 /* IHTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IHTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17021844217DB33B00CC9CD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		17021846217DB33B00CC9CD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		17021846217DB33B00CC9CD3 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		17021849217DB33B00CC9CD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1702184C217DB33B00CC9CD3 /* IHTravel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IHTravel.xcdatamodel; sourceTree = "<group>"; };
 		1702184E217DB33E00CC9CD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,8 +56,9 @@
 		17021843217DB33B00CC9CD3 /* IHTravel */ = {
 			isa = PBXGroup;
 			children = (
+				17021859217DB38800CC9CD3 /* Controllers */,
 				17021844217DB33B00CC9CD3 /* AppDelegate.swift */,
-				17021846217DB33B00CC9CD3 /* ViewController.swift */,
+				17021846217DB33B00CC9CD3 /* homeViewController.swift */,
 				17021848217DB33B00CC9CD3 /* Main.storyboard */,
 				1702184E217DB33E00CC9CD3 /* Assets.xcassets */,
 				17021850217DB33E00CC9CD3 /* LaunchScreen.storyboard */,
@@ -65,6 +66,13 @@
 				1702184B217DB33B00CC9CD3 /* IHTravel.xcdatamodeld */,
 			);
 			path = IHTravel;
+			sourceTree = "<group>";
+		};
+		17021859217DB38800CC9CD3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1702184D217DB33B00CC9CD3 /* IHTravel.xcdatamodeld in Sources */,
-				17021847217DB33B00CC9CD3 /* ViewController.swift in Sources */,
+				17021847217DB33B00CC9CD3 /* homeViewController.swift in Sources */,
 				17021845217DB33B00CC9CD3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
