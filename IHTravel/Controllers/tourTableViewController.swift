@@ -55,6 +55,15 @@ class tourTableViewController: UITableViewController {
         cell?.tourBookingButton.layer.borderWidth = 1.0
         cell?.tourBookingButton.layer.borderColor = UIColor(red: 0, green: 0, blue: 255, alpha: 1.0).cgColor
         cell?.tourBookingButton.layer.cornerRadius = 6
+    
+        
+        cell?.cornerView.layer.masksToBounds = false
+        cell?.cornerView.layer.shadowColor = UIColor(white: 0, alpha: 1).cgColor
+        cell?.cornerView.layer.shadowRadius = 2
+        cell?.cornerView.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+        cell?.cornerView.layer.shadowOpacity = 0.3
+    
+
         
         switch indexPath.section {
         case 0:
@@ -88,7 +97,6 @@ class tourTableViewController: UITableViewController {
         return 3
     }
     
-
 
 
 

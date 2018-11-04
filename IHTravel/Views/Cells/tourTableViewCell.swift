@@ -10,7 +10,8 @@ import UIKit
 
 class tourTableViewCell: UITableViewCell {
 
-   
+    @IBOutlet weak var cornerView: UIView!
+
     @IBOutlet weak var tourBookingButton: UIButton!
     @IBOutlet weak var tourLikeButton: UIButton!
     @IBOutlet weak var tourShareButton: UIButton!
@@ -21,5 +22,6 @@ class tourTableViewCell: UITableViewCell {
     @IBOutlet weak var tourDateLabel: UILabel!
     @IBOutlet weak var tourPriceLabel: UILabel!
     
- 
+
+    
 }
