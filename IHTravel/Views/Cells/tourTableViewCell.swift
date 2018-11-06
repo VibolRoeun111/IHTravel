@@ -22,6 +22,22 @@ class tourTableViewCell: UITableViewCell {
     @IBOutlet weak var tourDateLabel: UILabel!
     @IBOutlet weak var tourPriceLabel: UILabel!
     
-
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        tourBookingButton.layer.borderWidth = 1.0
+        tourBookingButton.layer.borderColor = UIColor.color(red: 35, green: 87, blue: 132, alpha: 1).cgColor
+        tourBookingButton.layer.cornerRadius = 6
+        
+        tourPromotionLabel.layer.borderColor = UIColor.white.cgColor
+        tourPromotionLabel.layer.borderWidth = 1.0
+        tourPromotionLabel.layer.cornerRadius = 4
+        
+        cornerView.layer.masksToBounds = false
+        cornerView.layer.shadowColor = UIColor(white: 0, alpha: 1).cgColor
+        cornerView.layer.shadowRadius = 2
+        cornerView.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+        cornerView.layer.shadowOpacity = 0.3
+    }
     
 }

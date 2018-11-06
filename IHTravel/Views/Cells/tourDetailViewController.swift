@@ -8,18 +8,48 @@
 
 import UIKit
 
-class tourDetailViewController: UIViewController {
+class tourDetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
+    @IBOutlet weak var bookingButton: UIButton!
+    @IBOutlet weak var pdfButton: UIButton!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var viewContainer: UIView!
+    
+    @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        viewContainer.layer.borderColor = UIColor.black.cgColor
+        viewContainer.layer.borderColor = UIColor.color(red: 231, green: 234, blue: 236, alpha: 1).cgColor
         viewContainer.layer.cornerRadius = 6.0
         viewContainer.layer.borderWidth = 1.0
+        
+        bookingButton.layer.borderWidth = 1.0
+        bookingButton.layer.borderColor = UIColor.color(red: 35, green: 87, blue: 132, alpha: 1).cgColor
+        bookingButton.layer.cornerRadius = 4
+        
+        pdfButton.layer.borderWidth = 1.0
+        pdfButton.layer.borderColor = UIColor.color(red: 208, green: 2, blue: 27, alpha: 1).cgColor
+        pdfButton.layer.cornerRadius = 4
+        
+        collectionView.register(UINib(nibName: "otherCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "otherCell")
     }
     
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "otherCell", for: indexPath) as? otherCollectionViewCell
+        
+        return cell!
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 100, height: collectionView.frame.height)
+    }
+
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+    }
 
     
 
