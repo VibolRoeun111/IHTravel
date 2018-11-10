@@ -9,7 +9,11 @@
 import UIKit
 
 class tourDetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    private var lastContentOffset: CGFloat = 0
 
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var bookingButton: UIButton!
     @IBOutlet weak var pdfButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
@@ -17,6 +21,7 @@ class tourDetailViewController: UIViewController, UICollectionViewDelegate, UICo
     @IBOutlet weak var viewContainer: UIView!
     
     @IBOutlet weak var collectionView: UICollectionView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +56,19 @@ class tourDetailViewController: UIViewController, UICollectionViewDelegate, UICo
         return 5
     }
 
+    @IBAction func backButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
-
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        self.lastContentOffset = scrollView.contentOffset.y
+    }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if (lastContentOffset > scrollView.contentOffset.y) {
+            backButton.layer.opacity = 1
+        }
+        else if (lastContentOffset < scrollView.contentOffset.y) {
+            backButton.layer.opacity = 0
+        }
+    }
 }

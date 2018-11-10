@@ -81,6 +81,9 @@ class tourTableViewController: UITableViewController {
         return 3
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "tourSegue", sender: nil)
+    }
 
 
 

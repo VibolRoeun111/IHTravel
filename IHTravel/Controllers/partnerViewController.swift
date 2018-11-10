@@ -35,5 +35,7 @@ class partnerViewController: UIViewController, UITableViewDelegate, UITableViewD
         return 260.0
     }
   
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "partnerSegue", sender: nil)
+    }
 }
