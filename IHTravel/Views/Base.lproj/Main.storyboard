@@ -54,7 +54,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vmb-Eb-vnK">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="958"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1008"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image2" translatesAutoresizingMaskIntoConstraints="NO" id="tMY-aa-qil">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
@@ -76,7 +76,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X1k-Ih-jl7">
-                                                <rect key="frame" x="8" y="358" width="359" height="592"/>
+                                                <rect key="frame" x="8" y="358" width="359" height="642"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="កោះឋានសួគ៌-ឆ្នេរសុខសាន្ត" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2n-8z-VFv">
                                                         <rect key="frame" x="0.0" y="10" width="359" height="23"/>
@@ -269,10 +269,10 @@
                                                         </constraints>
                                                     </view>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cwg-I0-dwg">
-                                                        <rect key="frame" x="0.0" y="456" width="359" height="120"/>
+                                                        <rect key="frame" x="0.0" y="456" width="359" height="170"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="120" id="pfI-zo-ZKi"/>
+                                                            <constraint firstAttribute="height" constant="170" id="pfI-zo-ZKi"/>
                                                         </constraints>
                                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="8" minimumInteritemSpacing="8" id="LEa-Ut-mcX">
                                                             <size key="itemSize" width="95" height="108"/>
@@ -282,7 +282,7 @@
                                                         </collectionViewFlowLayout>
                                                         <cells>
                                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="otherCell" id="w8P-Sj-voR">
-                                                                <rect key="frame" x="0.0" y="6" width="95" height="108"/>
+                                                                <rect key="frame" x="0.0" y="31" width="95" height="108"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                                     <rect key="frame" x="0.0" y="0.0" width="95" height="108"/>
@@ -1052,6 +1052,9 @@
                                                             <constraint firstAttribute="height" constant="24" id="lva-gn-kh2"/>
                                                         </constraints>
                                                         <state key="normal" image="paper-plane-2"/>
+                                                        <connections>
+                                                            <action selector="shareButtonPress:" destination="B4h-2f-msp" eventType="touchUpInside" id="obS-rn-yZR"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -1195,17 +1198,17 @@
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bft-P5-mri">
                                                 <rect key="frame" x="16" y="597" width="343" height="24"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPo-iR-bQK">
                                                 <rect key="frame" x="16" y="629" width="343" height="306"/>
-                                                <mutableString key="text">Back in the 1950s, the fathers of the field Minsky and McCarthy, described artificial intelligence as any task performed by a program or a machine that, if a human carried out the same activity, we would say the human had to apply intelligence to accomplish the task.
+                                                <string key="text">Back in the 1950s, the fathers of the field Minsky and McCarthy, described artificial intelligence as any task performed by a program or a machine that, if a human carried out the same activity, we would say the human had to apply intelligence to accomplish the task.
 
 That obviously is a fairly broad definition, which is why you will sometimes see arguments over whether something is truly AI or not.
 
-AI systems will typically demonstrate at least some of the following behaviors associated with human intelligence: planning, learning, reasoning, problem solving, knowledge representation, perception, motion, and manipulation and, to a lesser extent, social intelligence and creativity.</mutableString>
+AI systems will typically demonstrate at least some of the following behaviors associated with human intelligence: planning, learning, reasoning, problem solving, knowledge representation, perception, motion, and manipulation and, to a lesser extent, social intelligence and creativity.</string>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="15"/>
                                                 <color key="textColor" white="0.0" alpha="0.69940603599999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -1255,10 +1258,180 @@ AI systems will typically demonstrate at least some of the following behaviors a
                     <navigationItem key="navigationItem" title="About" id="Kf2-2f-29X"/>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
+                        <outlet property="contactEmailTextField" destination="s4i-c1-Rd5" id="eCe-t5-suJ"/>
+                        <outlet property="contactMessageTextView" destination="Pvm-7d-k1T" id="4AT-4t-nKX"/>
+                        <outlet property="contactNameTextField" destination="LiI-NL-6Xj" id="Xkh-QY-rIW"/>
+                        <outlet property="contactPhoneTextField" destination="sUY-Mf-r5W" id="Syg-BX-Flx"/>
                         <outlet property="viewContactContainer" destination="jcj-yS-zKT" id="cL5-MA-KU2"/>
+                        <outlet property="viewContainer" destination="bQB-Vn-DJ1" id="AFv-fQ-cnR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ub-ue-rSm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="bQB-Vn-DJ1">
+                    <rect key="frame" x="0.0" y="0.0" width="384" height="658"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xbn-og-Gge">
+                            <rect key="frame" x="0.0" y="20" width="384" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0v-Q5-Vhi">
+                                    <rect key="frame" x="352" y="4" width="28" height="28"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="28" id="56w-m6-AgP"/>
+                                        <constraint firstAttribute="height" constant="28" id="sJd-0T-ZM2"/>
+                                    </constraints>
+                                    <state key="normal" image="delete"/>
+                                    <connections>
+                                        <action selector="handleDimiss:" destination="B4h-2f-msp" eventType="touchUpInside" id="Oyg-uH-M8N"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Dv-c6-JXm">
+                                    <rect key="frame" x="146.5" y="13" width="91" height="24"/>
+                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="F81-4z-phP"/>
+                                <constraint firstItem="O0v-Q5-Vhi" firstAttribute="top" secondItem="xbn-og-Gge" secondAttribute="top" constant="4" id="NKY-Rp-uAK"/>
+                                <constraint firstAttribute="trailing" secondItem="O0v-Q5-Vhi" secondAttribute="trailing" constant="4" id="R6p-WQ-k39"/>
+                                <constraint firstItem="2Dv-c6-JXm" firstAttribute="centerY" secondItem="xbn-og-Gge" secondAttribute="centerY" id="gut-Pt-zXb"/>
+                                <constraint firstItem="2Dv-c6-JXm" firstAttribute="centerX" secondItem="xbn-og-Gge" secondAttribute="centerX" id="hSM-9X-Vgl"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="OSl-RS-a8o">
+                            <rect key="frame" x="16" y="70" width="352" height="258"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jDb-L3-aiW">
+                                    <rect key="frame" x="0.0" y="0.0" width="352" height="48"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="TuU-CE-RTj">
+                                            <rect key="frame" x="0.0" y="0.0" width="171" height="48"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2s-1W-M54">
+                                                    <rect key="frame" x="0.0" y="0.0" width="171" height="16"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
+                                                    <color key="textColor" white="0.0" alpha="0.69940603599999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LiI-NL-6Xj">
+                                                    <rect key="frame" x="0.0" y="18" width="171" height="30"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="I02-bo-kM1">
+                                            <rect key="frame" x="181" y="0.0" width="171" height="48"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MuB-dy-s3e">
+                                                    <rect key="frame" x="0.0" y="0.0" width="171" height="16"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
+                                                    <color key="textColor" white="0.0" alpha="0.69940603599999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Phone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sUY-Mf-r5W">
+                                                    <rect key="frame" x="0.0" y="18" width="171" height="30"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="l7v-OE-pQm">
+                                    <rect key="frame" x="0.0" y="60" width="352" height="48"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdB-t1-x1c">
+                                            <rect key="frame" x="0.0" y="0.0" width="352" height="16"/>
+                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
+                                            <color key="textColor" white="0.0" alpha="0.69940603599999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s4i-c1-Rd5">
+                                            <rect key="frame" x="0.0" y="18" width="352" height="30"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Bz0-dy-RtF">
+                                    <rect key="frame" x="0.0" y="120" width="352" height="138"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zro-fb-QeZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="352" height="16"/>
+                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
+                                            <color key="textColor" white="0.0" alpha="0.69940603599999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pvm-7d-k1T">
+                                            <rect key="frame" x="0.0" y="18" width="352" height="120"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="120" id="pk6-aO-sLT"/>
+                                            </constraints>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                    <integer key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="4"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="78k-AS-pXf">
+                            <rect key="frame" x="0.0" y="328" width="384" height="330"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALA-Yl-3Ir">
+                                    <rect key="frame" x="142" y="142.5" width="100" height="45"/>
+                                    <color key="backgroundColor" red="0.13725490200000001" green="0.3411764706" blue="0.51764705879999995" alpha="0.90164811639999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="AGG-gN-X72"/>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="h1L-71-P8z"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                    <state key="normal" title="Submit">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="ALA-Yl-3Ir" firstAttribute="centerX" secondItem="78k-AS-pXf" secondAttribute="centerX" id="0yd-ak-e1a"/>
+                                <constraint firstItem="ALA-Yl-3Ir" firstAttribute="centerY" secondItem="78k-AS-pXf" secondAttribute="centerY" id="qlZ-uI-yzh"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="5xa-3g-6nT" firstAttribute="trailing" secondItem="78k-AS-pXf" secondAttribute="trailing" id="9t0-Nl-THT"/>
+                        <constraint firstItem="OSl-RS-a8o" firstAttribute="trailing" secondItem="5xa-3g-6nT" secondAttribute="trailing" constant="-16" id="Fmi-7A-mdQ"/>
+                        <constraint firstItem="OSl-RS-a8o" firstAttribute="leading" secondItem="5xa-3g-6nT" secondAttribute="leading" constant="16" id="IKO-Ae-CKS"/>
+                        <constraint firstItem="xbn-og-Gge" firstAttribute="trailing" secondItem="5xa-3g-6nT" secondAttribute="trailing" id="Q1c-5v-KKt"/>
+                        <constraint firstItem="5xa-3g-6nT" firstAttribute="bottom" secondItem="78k-AS-pXf" secondAttribute="bottom" id="Qsm-eL-rXU"/>
+                        <constraint firstItem="78k-AS-pXf" firstAttribute="leading" secondItem="5xa-3g-6nT" secondAttribute="leading" id="dky-z0-Wda"/>
+                        <constraint firstItem="xbn-og-Gge" firstAttribute="top" secondItem="5xa-3g-6nT" secondAttribute="top" id="j6n-Rc-Oas"/>
+                        <constraint firstItem="78k-AS-pXf" firstAttribute="top" secondItem="OSl-RS-a8o" secondAttribute="bottom" id="o8F-mn-YOf"/>
+                        <constraint firstItem="OSl-RS-a8o" firstAttribute="top" secondItem="xbn-og-Gge" secondAttribute="bottom" id="xtf-fT-n1U"/>
+                        <constraint firstItem="xbn-og-Gge" firstAttribute="leading" secondItem="5xa-3g-6nT" secondAttribute="leading" id="yRa-5g-Zi9"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="5xa-3g-6nT"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="-1498.4000000000001" y="1566.1169415292354"/>
         </scene>
@@ -1365,6 +1538,7 @@ AI systems will typically demonstrate at least some of the following behaviors a
         <image name="bus" width="64" height="64"/>
         <image name="bus-1" width="140" height="90"/>
         <image name="coffee-shop" width="64" height="64"/>
+        <image name="delete" width="32" height="32"/>
         <image name="discount" width="64" height="64"/>
         <image name="glasses" width="64" height="64"/>
         <image name="home" width="25" height="25"/>

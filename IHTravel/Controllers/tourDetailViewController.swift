@@ -48,7 +48,7 @@ class tourDetailViewController: UIViewController, UICollectionViewDelegate, UICo
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 100, height: collectionView.frame.height)
+        return CGSize(width: 140, height: collectionView.frame.height)
     }
 
     
