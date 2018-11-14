@@ -26,13 +26,15 @@ class homeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         tourViewContainer.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
         tourViewContainer.layer.masksToBounds = false
         tourViewContainer.layer.shadowOpacity = 0.4
+        
+        discountCollectionView.register(UINib(nibName: "discountCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "discountCell")
     }
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = discountCollectionView.dequeueReusableCell(withReuseIdentifier: "discountCell", for: indexPath) as! discountHomeCollectionViewCell
+        let cell = discountCollectionView.dequeueReusableCell(withReuseIdentifier: "discountCell", for: indexPath) as! discountCollectionViewCell
         
-        cell.discountImageView.image = UIImage(named: images[indexPath.row])
+        cell.imageView.image = UIImage(named: images[indexPath.row])
         
         
         return cell

@@ -23,7 +23,6 @@
 		1795604F2192B00800BFE542 /* partnerDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1795604E2192B00800BFE542 /* partnerDetailTableViewController.swift */; };
 		179560522192B03F00BFE542 /* partnerDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179560502192B03F00BFE542 /* partnerDetailTableViewCell.swift */; };
 		179560532192B03F00BFE542 /* partnerDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 179560512192B03F00BFE542 /* partnerDetailTableViewCell.xib */; };
-		179FFBAD218D98D000D9B502 /* discountHomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179FFBAC218D98D000D9B502 /* discountHomeCollectionViewCell.swift */; };
 		17A09C41218E3297000B3476 /* tourCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17A09C40218E3297000B3476 /* tourCell.xib */; };
 		17A09C43218E3FC8000B3476 /* tourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A09C42218E3FC8000B3476 /* tourTableViewCell.swift */; };
 		17A285382194191000D6CC54 /* aboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A285372194191000D6CC54 /* aboutViewController.swift */; };
@@ -32,6 +31,9 @@
 		17D2DFFE21903364006ACCBE /* otherCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17D2DFFC21903364006ACCBE /* otherCollectionViewCell.xib */; };
 		17E2607321915AB800645032 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E2607221915AB800645032 /* GradientView.swift */; };
 		17FC650F218CB40E00FCA25C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FC650E218CB40E00FCA25C /* Extension.swift */; };
+		17FE3A02219C025C005C2DF2 /* discountCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FE3A00219C025C005C2DF2 /* discountCollectionViewCell.swift */; };
+		17FE3A03219C025C005C2DF2 /* discountCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17FE3A01219C025C005C2DF2 /* discountCollectionViewCell.xib */; };
+		17FE3A05219C05D6005C2DF2 /* informationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FE3A04219C05D6005C2DF2 /* informationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +55,6 @@
 		1795604E2192B00800BFE542 /* partnerDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partnerDetailTableViewController.swift; sourceTree = "<group>"; };
 		179560502192B03F00BFE542 /* partnerDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partnerDetailTableViewCell.swift; sourceTree = "<group>"; };
 		179560512192B03F00BFE542 /* partnerDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = partnerDetailTableViewCell.xib; sourceTree = "<group>"; };
-		179FFBAC218D98D000D9B502 /* discountHomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = discountHomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		17A09C40218E3297000B3476 /* tourCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tourCell.xib; sourceTree = "<group>"; };
 		17A09C42218E3FC8000B3476 /* tourTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tourTableViewCell.swift; sourceTree = "<group>"; };
 		17A285372194191000D6CC54 /* aboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aboutViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +63,9 @@
 		17D2DFFC21903364006ACCBE /* otherCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = otherCollectionViewCell.xib; sourceTree = "<group>"; };
 		17E2607221915AB800645032 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		17FC650E218CB40E00FCA25C /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		17FE3A00219C025C005C2DF2 /* discountCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = discountCollectionViewCell.swift; sourceTree = "<group>"; };
+		17FE3A01219C025C005C2DF2 /* discountCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = discountCollectionViewCell.xib; sourceTree = "<group>"; };
+		17FE3A04219C05D6005C2DF2 /* informationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = informationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,7 @@
 				1795604A2192AA5D00BFE542 /* partnerViewController.swift */,
 				1795604E2192B00800BFE542 /* partnerDetailTableViewController.swift */,
 				17A285372194191000D6CC54 /* aboutViewController.swift */,
+				17FE3A04219C05D6005C2DF2 /* informationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 				1791681F218DC746001A966C /* tourHeader.xib */,
 				17A09C40218E3297000B3476 /* tourCell.xib */,
 				17D2DFFC21903364006ACCBE /* otherCollectionViewCell.xib */,
+				17FE3A01219C025C005C2DF2 /* discountCollectionViewCell.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -133,8 +139,8 @@
 		179FFBAB218D98B500D9B502 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				17FE3A00219C025C005C2DF2 /* discountCollectionViewCell.swift */,
 				17D2DFFB21903364006ACCBE /* otherCollectionViewCell.swift */,
-				179FFBAC218D98D000D9B502 /* discountHomeCollectionViewCell.swift */,
 				1791681C218DC70A001A966C /* tourHeaderTableViewCell.swift */,
 				17A09C42218E3FC8000B3476 /* tourTableViewCell.swift */,
 				179560462192A74600BFE542 /* partnerTableViewCell.swift */,
@@ -222,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17FE3A03219C025C005C2DF2 /* discountCollectionViewCell.xib in Resources */,
 				17021852217DB33E00CC9CD3 /* LaunchScreen.storyboard in Resources */,
 				179560532192B03F00BFE542 /* partnerDetailTableViewCell.xib in Resources */,
 				17D2DFFE21903364006ACCBE /* otherCollectionViewCell.xib in Resources */,
@@ -241,10 +248,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				178582E2218DC9B100A1C841 /* tourTableViewController.swift in Sources */,
-				179FFBAD218D98D000D9B502 /* discountHomeCollectionViewCell.swift in Sources */,
 				17E2607321915AB800645032 /* GradientView.swift in Sources */,
 				1702184D217DB33B00CC9CD3 /* IHTravel.xcdatamodeld in Sources */,
+				17FE3A02219C025C005C2DF2 /* discountCollectionViewCell.swift in Sources */,
 				179560482192A74600BFE542 /* partnerTableViewCell.swift in Sources */,
+				17FE3A05219C05D6005C2DF2 /* informationViewController.swift in Sources */,
 				1791681D218DC70A001A966C /* tourHeaderTableViewCell.swift in Sources */,
 				17021847217DB33B00CC9CD3 /* homeViewController.swift in Sources */,
 				173FB7A2218F2F8C00B8A0DF /* tourDetailViewController.swift in Sources */,
