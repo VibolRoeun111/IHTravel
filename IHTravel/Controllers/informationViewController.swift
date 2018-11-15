@@ -10,6 +10,7 @@ import UIKit
 
 class informationViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
+    @IBOutlet weak var informationGridContainier: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
     
     let images = ["image1", "image2", "image3", "image4"]
@@ -17,6 +18,7 @@ class informationViewController: UIViewController, UICollectionViewDataSource, U
         super.viewDidLoad()
 
         collectionView.register(UINib(nibName: "discountCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "discountCell")
+        informationGridContainier.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleGestureVeiw)))
      
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -31,6 +33,10 @@ class informationViewController: UIViewController, UICollectionViewDataSource, U
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width - 100, height: collectionView.frame.height)
+    }
+    
+    @objc func handleGestureVeiw(){
+        performSegue(withIdentifier: "informationSegue", sender: nil)
     }
 
 }
