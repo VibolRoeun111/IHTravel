@@ -17,29 +17,29 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="249.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6S7-NR-xgI">
-                        <rect key="frame" x="10" y="8" width="355" height="237.5"/>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6S7-NR-xgI">
+                        <rect key="frame" x="16" y="8" width="343" height="241.5"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="Hd7-jx-awJ">
-                                <rect key="frame" x="0.0" y="0.0" width="355" height="157.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="343" height="161.5"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5SH-NO-1Iy">
-                                <rect key="frame" x="0.0" y="157.5" width="355" height="80"/>
+                                <rect key="frame" x="0.0" y="161.5" width="343" height="80"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="HTd-1t-fDC">
-                                        <rect key="frame" x="8" y="8" width="339" height="56"/>
+                                        <rect key="frame" x="8" y="8" width="327" height="56"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Ecn-LS-iUK">
-                                                <rect key="frame" x="0.0" y="0.0" width="339" height="22"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="327" height="22"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="WHAT IS ARTIFICIAL INTELLIGENCE (AI)?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yle-W6-quJ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="285" height="22"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="273" height="22"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 120" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owx-qH-1kV">
-                                                        <rect key="frame" x="289" y="0.0" width="50" height="22"/>
+                                                        <rect key="frame" x="277" y="0.0" width="50" height="22"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="50" id="0AN-d6-Q74"/>
                                                         </constraints>
@@ -50,16 +50,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="AtO-WI-NEU">
-                                                <rect key="frame" x="0.0" y="26" width="339" height="30"/>
+                                                <rect key="frame" x="0.0" y="26" width="327" height="30"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Narrow AI is what we see all around us in computers today" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wI5-tk-Iz8">
-                                                        <rect key="frame" x="0.0" y="5.5" width="255" height="19.5"/>
+                                                        <rect key="frame" x="0.0" y="5.5" width="243" height="19.5"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
                                                         <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGh-oc-tBA">
-                                                        <rect key="frame" x="259" y="0.0" width="80" height="30"/>
+                                                        <rect key="frame" x="247" y="0.0" width="80" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="LUl-bn-LR2"/>
                                                             <constraint firstAttribute="width" secondItem="jGh-oc-tBA" secondAttribute="height" multiplier="8:3" id="Yno-fl-2eG"/>
@@ -84,11 +84,11 @@
                                     <constraint firstAttribute="height" constant="80" id="nhq-ut-qQ1"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YFj-vL-Hpl" customClass="GradientView" customModule="IHTravel" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="355" height="157.5"/>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YFj-vL-Hpl" customClass="GradientView" customModule="IHTravel" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="343" height="161.5"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
-                                        <color key="value" white="0.0" alpha="0.60067958047945214" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="NO"/>
                                 </userDefinedRuntimeAttributes>
@@ -104,7 +104,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdc-Gk-OWd">
-                                <rect key="frame" x="285" y="10.5" width="25" height="25"/>
+                                <rect key="frame" x="273" y="10.5" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="7IB-6K-Pef"/>
                                     <constraint firstAttribute="width" constant="25" id="ZYz-EL-JRp"/>
@@ -112,7 +112,7 @@
                                 <state key="normal" image="share-2"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mrj-qX-X2U">
-                                <rect key="frame" x="322" y="10.5" width="25" height="25"/>
+                                <rect key="frame" x="310" y="10.5" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="N4l-5f-ra6"/>
                                     <constraint firstAttribute="width" constant="25" id="pKo-xK-YW8"/>
@@ -140,13 +140,18 @@
                             <constraint firstAttribute="bottom" secondItem="5SH-NO-1Iy" secondAttribute="bottom" id="tfR-m1-qTY"/>
                             <constraint firstItem="Mrj-qX-X2U" firstAttribute="leading" secondItem="zdc-Gk-OWd" secondAttribute="trailing" constant="12" id="wYo-5g-9Hg"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="6S7-NR-xgI" secondAttribute="bottom" constant="4" id="Qlo-K4-gaU"/>
-                    <constraint firstItem="6S7-NR-xgI" firstAttribute="leading" secondItem="bJw-Sh-UAx" secondAttribute="leading" constant="10" id="ale-jg-992"/>
+                    <constraint firstAttribute="bottom" secondItem="6S7-NR-xgI" secondAttribute="bottom" id="Qlo-K4-gaU"/>
+                    <constraint firstItem="6S7-NR-xgI" firstAttribute="leading" secondItem="bJw-Sh-UAx" secondAttribute="leading" constant="16" id="ale-jg-992"/>
                     <constraint firstItem="6S7-NR-xgI" firstAttribute="top" secondItem="bJw-Sh-UAx" secondAttribute="top" constant="8" id="deq-kq-Bhl"/>
-                    <constraint firstAttribute="trailing" secondItem="6S7-NR-xgI" secondAttribute="trailing" constant="10" id="u4e-OZ-fWr"/>
+                    <constraint firstAttribute="trailing" secondItem="6S7-NR-xgI" secondAttribute="trailing" constant="16" id="u4e-OZ-fWr"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
