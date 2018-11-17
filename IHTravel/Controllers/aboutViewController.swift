@@ -26,6 +26,10 @@ class aboutViewController: UIViewController {
     }
     
     func setupSadow(){
+        
+        //get rid of navigation underline
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        navigationController?.navigationBar.shadowImage = UIImage()
         viewContactContainer.layer.shadowColor = UIColor.color(red: 231, green: 234, blue: 236, alpha: 0.8).cgColor
         viewContactContainer.layer.shadowRadius = 4
         viewContactContainer.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)

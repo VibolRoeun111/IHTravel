@@ -17,6 +17,10 @@ class partnerViewController: UIViewController, UITableViewDelegate, UITableViewD
         super.viewDidLoad()
         
         tableView.register(UINib(nibName: "partnerTableViewCell", bundle: nil), forCellReuseIdentifier: "partnerCell")
+        
+        //get rid of navigation underline
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        navigationController?.navigationBar.shadowImage = UIImage()
        
     }
     

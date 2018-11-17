@@ -19,6 +19,10 @@ class informationViewController: UIViewController, UICollectionViewDataSource, U
 
         collectionView.register(UINib(nibName: "discountCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "discountCell")
         informationGridContainier.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleGestureVeiw)))
+        
+        //get rid of navigation underline
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        navigationController?.navigationBar.shadowImage = UIImage()
      
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

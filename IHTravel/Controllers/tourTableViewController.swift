@@ -19,6 +19,10 @@ class tourTableViewController: UITableViewController {
 
         tableView.register(UINib(nibName: "tourHeader", bundle: nil), forCellReuseIdentifier: "headerCell")
         tableView.register(UINib(nibName: "tourCell", bundle: nil), forCellReuseIdentifier: "tourCell")
+        
+        //get rid of navigation underline
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        navigationController?.navigationBar.shadowImage = UIImage()
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3

@@ -33,6 +33,10 @@ class informationTableViewController: UITableViewController {
         return 180
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        performSegue(withIdentifier: "inforDetailSegue", sender: nil)
+    }
     
 
 }

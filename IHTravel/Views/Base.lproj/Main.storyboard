@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9qU-ok-3eT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3kg-Sc-OQD">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -2057,7 +2057,7 @@ AI systems will typically demonstrate at least some of the following behaviors a
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FK9-L5-TkW">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1019"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="762"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image2" translatesAutoresizingMaskIntoConstraints="NO" id="FUc-PJ-gxd">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="340"/>
@@ -2074,14 +2074,43 @@ AI systems will typically demonstrate at least some of the following behaviors a
                                                             <constraint firstAttribute="width" constant="24" id="DrO-3b-X17"/>
                                                             <constraint firstAttribute="height" constant="24" id="nRK-cc-RVs"/>
                                                         </constraints>
-                                                        <state key="normal" image="paper-plane-2"/>
+                                                        <state key="normal" image="share-2"/>
                                                         <connections>
                                                             <action selector="shareButtonPress:" destination="9qU-ok-3eT" eventType="touchUpInside" id="A4A-rV-QYr"/>
                                                         </connections>
                                                     </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lI2-hv-XPH">
+                                                        <rect key="frame" x="303" y="28" width="24" height="24"/>
+                                                        <state key="normal" image="like"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcO-r4-9qn">
+                                                        <rect key="frame" x="16" y="28" width="24" height="24"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="24" id="8Zg-4t-aMw"/>
+                                                            <constraint firstAttribute="width" constant="24" id="p3M-Ma-rsd"/>
+                                                        </constraints>
+                                                        <state key="normal" image="left-arrow"/>
+                                                        <connections>
+                                                            <action selector="backButtonPress:" destination="9qU-ok-3eT" eventType="touchUpInside" id="khK-yd-kia"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFq-o6-whn">
+                                                        <rect key="frame" x="125" y="29" width="125.5" height="22"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="18"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                                 <constraints>
+                                                    <constraint firstItem="HcO-r4-9qn" firstAttribute="leading" secondItem="99W-Ws-n0B" secondAttribute="leading" constant="16" id="HHc-Ac-mz5"/>
                                                     <constraint firstAttribute="height" constant="170" id="MwX-19-EB9"/>
+                                                    <constraint firstItem="q1P-Aj-u4S" firstAttribute="leading" secondItem="lI2-hv-XPH" secondAttribute="trailing" constant="8" id="SpK-yP-lKQ"/>
+                                                    <constraint firstItem="DFq-o6-whn" firstAttribute="centerY" secondItem="HcO-r4-9qn" secondAttribute="centerY" id="bHc-pB-3PN"/>
+                                                    <constraint firstItem="q1P-Aj-u4S" firstAttribute="height" secondItem="lI2-hv-XPH" secondAttribute="height" id="iEr-Vz-K2R"/>
+                                                    <constraint firstItem="q1P-Aj-u4S" firstAttribute="centerY" secondItem="lI2-hv-XPH" secondAttribute="centerY" id="r9b-5d-xd2"/>
+                                                    <constraint firstItem="DFq-o6-whn" firstAttribute="centerX" secondItem="99W-Ws-n0B" secondAttribute="centerX" id="rDY-Ay-8el"/>
+                                                    <constraint firstItem="lI2-hv-XPH" firstAttribute="centerY" secondItem="DFq-o6-whn" secondAttribute="centerY" id="sPw-uO-KzL"/>
+                                                    <constraint firstItem="q1P-Aj-u4S" firstAttribute="width" secondItem="lI2-hv-XPH" secondAttribute="width" id="ucp-Mi-fae"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="NO"/>
@@ -2091,25 +2120,25 @@ AI systems will typically demonstrate at least some of the following behaviors a
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7eC-16-WGp">
-                                                <rect key="frame" x="16" y="290" width="343" height="729"/>
+                                                <rect key="frame" x="16" y="290" width="343" height="472"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yPh-rF-hVX">
                                                         <rect key="frame" x="8" y="8" width="327" height="84"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="កោះឋានសួគ៌-ឆ្នេរសុខសាន្ត" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzK-Ng-F2K">
-                                                                <rect key="frame" x="8" y="6" width="315" height="19.5"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="កោះឋានសួគ៌-ឆ្នេរសុខសាន្ កោះឋានសួគ៌-ឆ្នេរសុខសាន្ត" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzK-Ng-F2K">
+                                                                <rect key="frame" x="16" y="8" width="307" height="38.5"/>
                                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="16"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22/21 october 2018" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjS-6D-oPe">
-                                                                <rect key="frame" x="34" y="58.5" width="289" height="17"/>
+                                                                <rect key="frame" x="42" y="56.5" width="281" height="17"/>
                                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="26c-cZ-LDD">
-                                                                <rect key="frame" x="8" y="58" width="18" height="18"/>
+                                                                <rect key="frame" x="16" y="56" width="18" height="18"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="18" id="6xA-lL-Dde"/>
                                                                     <constraint firstAttribute="height" constant="18" id="rLB-os-Ajf"/>
@@ -2119,29 +2148,45 @@ AI systems will typically demonstrate at least some of the following behaviors a
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="dzK-Ng-F2K" secondAttribute="trailing" constant="4" id="6C9-Rl-DYU"/>
-                                                            <constraint firstItem="dzK-Ng-F2K" firstAttribute="top" secondItem="yPh-rF-hVX" secondAttribute="top" constant="6" id="9aR-PF-wkn"/>
+                                                            <constraint firstItem="dzK-Ng-F2K" firstAttribute="top" secondItem="yPh-rF-hVX" secondAttribute="top" constant="8" id="9aR-PF-wkn"/>
                                                             <constraint firstAttribute="trailing" secondItem="OjS-6D-oPe" secondAttribute="trailing" constant="4" id="Jbz-Ld-rLv"/>
                                                             <constraint firstItem="OjS-6D-oPe" firstAttribute="leading" secondItem="26c-cZ-LDD" secondAttribute="trailing" constant="8" id="SIX-ug-pA6"/>
                                                             <constraint firstItem="OjS-6D-oPe" firstAttribute="centerY" secondItem="26c-cZ-LDD" secondAttribute="centerY" id="Z2U-LY-HMo"/>
-                                                            <constraint firstAttribute="bottom" secondItem="26c-cZ-LDD" secondAttribute="bottom" constant="8" id="aUd-bR-WBW"/>
+                                                            <constraint firstAttribute="bottom" secondItem="26c-cZ-LDD" secondAttribute="bottom" constant="10" id="aUd-bR-WBW"/>
                                                             <constraint firstAttribute="height" constant="84" id="lmb-Uj-ZBt"/>
-                                                            <constraint firstItem="dzK-Ng-F2K" firstAttribute="leading" secondItem="yPh-rF-hVX" secondAttribute="leading" constant="8" id="rSJ-Jy-NIZ"/>
-                                                            <constraint firstItem="26c-cZ-LDD" firstAttribute="leading" secondItem="yPh-rF-hVX" secondAttribute="leading" constant="8" id="vcJ-hH-ki3"/>
+                                                            <constraint firstItem="dzK-Ng-F2K" firstAttribute="leading" secondItem="yPh-rF-hVX" secondAttribute="leading" constant="16" id="rSJ-Jy-NIZ"/>
+                                                            <constraint firstItem="26c-cZ-LDD" firstAttribute="leading" secondItem="yPh-rF-hVX" secondAttribute="leading" constant="16" id="vcJ-hH-ki3"/>
                                                         </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                <integer key="value" value="6"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                                                <integer key="value" value="1"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
                                                     </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4P-Gc-Pqt">
+                                                        <rect key="frame" x="0.0" y="116" width="339" height="22"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQQ-Pc-DKp">
+                                                        <rect key="frame" x="0.0" y="142" width="343" height="306"/>
+                                                        <mutableString key="text">Back in the 1950s, the fathers of the field Minsky and McCarthy, described artificial intelligence as any task performed by a program or a machine that, if a human carried out the same activity, we would say the human had to apply intelligence to accomplish the task.
+
+That obviously is a fairly broad definition, which is why you will sometimes see arguments over whether something is truly AI or not.
+
+AI systems will typically demonstrate at least some of the following behaviors associated with human intelligence: planning, learning, reasoning, problem solving, knowledge representation, perception, motion, and manipulation and, to a lesser extent, social intelligence and creativity.</mutableString>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="15"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstItem="u4P-Gc-Pqt" firstAttribute="leading" secondItem="7eC-16-WGp" secondAttribute="leading" id="7LR-Dl-7Tc"/>
+                                                    <constraint firstItem="bQQ-Pc-DKp" firstAttribute="leading" secondItem="7eC-16-WGp" secondAttribute="leading" id="B3s-4t-Wti"/>
+                                                    <constraint firstItem="bQQ-Pc-DKp" firstAttribute="top" secondItem="u4P-Gc-Pqt" secondAttribute="bottom" constant="4" id="Jvu-hJ-Mge"/>
+                                                    <constraint firstAttribute="bottom" secondItem="bQQ-Pc-DKp" secondAttribute="bottom" constant="24" id="WlL-hR-gGy"/>
+                                                    <constraint firstAttribute="trailing" secondItem="u4P-Gc-Pqt" secondAttribute="trailing" constant="4" id="XWK-g9-s8c"/>
+                                                    <constraint firstItem="u4P-Gc-Pqt" firstAttribute="top" secondItem="yPh-rF-hVX" secondAttribute="bottom" constant="24" id="XaT-GH-7a6"/>
                                                     <constraint firstItem="yPh-rF-hVX" firstAttribute="leading" secondItem="7eC-16-WGp" secondAttribute="leading" constant="8" id="ZTk-iy-NcT"/>
                                                     <constraint firstAttribute="trailing" secondItem="yPh-rF-hVX" secondAttribute="trailing" constant="8" id="bjW-HN-j71"/>
+                                                    <constraint firstAttribute="trailing" secondItem="bQQ-Pc-DKp" secondAttribute="trailing" id="hy3-5t-ea6"/>
                                                     <constraint firstItem="yPh-rF-hVX" firstAttribute="top" secondItem="7eC-16-WGp" secondAttribute="top" constant="8" id="kBT-eF-7Md"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
@@ -2153,13 +2198,12 @@ AI systems will typically demonstrate at least some of the following behaviors a
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1019" id="5wg-Rf-72X"/>
                                             <constraint firstAttribute="trailing" secondItem="7eC-16-WGp" secondAttribute="trailing" constant="16" id="79Y-7v-sEu"/>
-                                            <constraint firstAttribute="bottom" secondItem="7eC-16-WGp" secondAttribute="bottom" id="A1y-gp-AnZ"/>
                                             <constraint firstAttribute="trailing" secondItem="FUc-PJ-gxd" secondAttribute="trailing" id="Gbr-Bj-bMb"/>
                                             <constraint firstItem="99W-Ws-n0B" firstAttribute="top" secondItem="FK9-L5-TkW" secondAttribute="top" id="KFq-2D-jli"/>
                                             <constraint firstItem="7eC-16-WGp" firstAttribute="top" secondItem="FUc-PJ-gxd" secondAttribute="bottom" constant="-50" id="MvM-kz-aLm"/>
                                             <constraint firstItem="FUc-PJ-gxd" firstAttribute="top" secondItem="FK9-L5-TkW" secondAttribute="top" id="N1B-Jg-Fn2"/>
+                                            <constraint firstAttribute="bottom" secondItem="7eC-16-WGp" secondAttribute="bottom" id="Pzw-2P-fEM"/>
                                             <constraint firstItem="99W-Ws-n0B" firstAttribute="leading" secondItem="FK9-L5-TkW" secondAttribute="leading" id="b0W-gl-m60"/>
                                             <constraint firstAttribute="trailing" secondItem="99W-Ws-n0B" secondAttribute="trailing" id="c1n-nR-8nw"/>
                                             <constraint firstItem="FUc-PJ-gxd" firstAttribute="leading" secondItem="FK9-L5-TkW" secondAttribute="leading" id="igC-DO-67E"/>
@@ -2168,10 +2212,10 @@ AI systems will typically demonstrate at least some of the following behaviors a
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="FK9-L5-TkW" secondAttribute="bottom" id="G7m-wj-CHq"/>
                                     <constraint firstItem="FK9-L5-TkW" firstAttribute="top" secondItem="PQp-lU-zPO" secondAttribute="top" id="I5u-uk-gAr"/>
                                     <constraint firstItem="FK9-L5-TkW" firstAttribute="width" secondItem="PQp-lU-zPO" secondAttribute="width" id="O92-hl-Iuw"/>
                                     <constraint firstAttribute="trailing" secondItem="FK9-L5-TkW" secondAttribute="trailing" id="kRU-Au-tPT"/>
-                                    <constraint firstAttribute="bottom" secondItem="FK9-L5-TkW" secondAttribute="bottom" id="l9Y-Du-quU"/>
                                     <constraint firstItem="FK9-L5-TkW" firstAttribute="leading" secondItem="PQp-lU-zPO" secondAttribute="leading" id="z3t-lq-0ZR"/>
                                 </constraints>
                             </scrollView>
@@ -2194,6 +2238,11 @@ AI systems will typically demonstrate at least some of the following behaviors a
                         <outlet property="contactMessageTextView" destination="Pvm-7d-k1T" id="G8t-3m-hzi"/>
                         <outlet property="contactNameTextField" destination="LiI-NL-6Xj" id="7l1-kO-rrm"/>
                         <outlet property="contactPhoneTextField" destination="sUY-Mf-r5W" id="X0H-TS-YFj"/>
+                        <outlet property="dateLabel" destination="OjS-6D-oPe" id="qRq-2I-3Ed"/>
+                        <outlet property="descriptionLabel" destination="bQQ-Pc-DKp" id="fIg-ig-L3a"/>
+                        <outlet property="informaitonTitleLabel" destination="dzK-Ng-F2K" id="uDK-kT-Sk1"/>
+                        <outlet property="titleContainer" destination="yPh-rF-hVX" id="drz-Zj-jGM"/>
+                        <outlet property="titleLabel" destination="DFq-o6-whn" id="xJv-FP-sRO"/>
                         <outlet property="viewContainer" destination="bQB-Vn-DJ1" id="fc2-vK-nbu"/>
                     </connections>
                 </viewController>
@@ -2218,9 +2267,11 @@ AI systems will typically demonstrate at least some of the following behaviors a
         <image name="image2" width="320" height="213"/>
         <image name="information" width="25" height="25"/>
         <image name="left-arrow" width="32" height="32"/>
+        <image name="like" width="32" height="32"/>
         <image name="lotus" width="64" height="64"/>
         <image name="paper-plane-2" width="32" height="32"/>
         <image name="partner" width="25" height="25"/>
+        <image name="share-2" width="32" height="32"/>
         <image name="spa" width="64" height="64"/>
         <image name="tour" width="25" height="25"/>
         <image name="wrench" width="64" height="64"/>
