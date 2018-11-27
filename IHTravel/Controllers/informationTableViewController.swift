@@ -10,9 +10,13 @@ import UIKit
 
 class informationTableViewController: UITableViewController {
 
+    var info_title: String = ""
+    var nav_title: String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = nav_title
+        
         tableView.register(UINib(nibName: "informationTableViewCell", bundle: nil), forCellReuseIdentifier: "informationCell")
     }
     
@@ -35,8 +39,20 @@ class informationTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        performSegue(withIdentifier: "inforDetailSegue", sender: nil)
+        info_title = String(indexPath.row)
+        
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "inforDetailSegue", sender: nil)
+        }
+        
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "inforDetailSegue" {
+            if let vc = segue.destination as? infoDetailViewController {
+                vc.nav_infodetail = info_title
+            }
+        }
+    }
+    
 }

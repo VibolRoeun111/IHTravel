@@ -10,6 +10,7 @@
 		170011B1219D6DCF006C81CE /* informationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170011AF219D6DCF006C81CE /* informationTableViewCell.swift */; };
 		170011B2219D6DCF006C81CE /* informationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 170011B0219D6DCF006C81CE /* informationTableViewCell.xib */; };
 		170011B4219D72CF006C81CE /* informationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170011B3219D72CF006C81CE /* informationTableViewController.swift */; };
+		1700874921ADA7CE006CB6F8 /* tourViewAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1700874821ADA7CE006CB6F8 /* tourViewAllViewController.swift */; };
 		17021845217DB33B00CC9CD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17021844217DB33B00CC9CD3 /* AppDelegate.swift */; };
 		17021847217DB33B00CC9CD3 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17021846217DB33B00CC9CD3 /* homeViewController.swift */; };
 		1702184A217DB33B00CC9CD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17021848217DB33B00CC9CD3 /* Main.storyboard */; };
@@ -33,6 +34,8 @@
 		17BC1AB4219965A0005ACAD6 /* AboutSent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BC1AB32199659F005ACAD6 /* AboutSent.swift */; };
 		17D2DFFD21903364006ACCBE /* otherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D2DFFB21903364006ACCBE /* otherCollectionViewCell.swift */; };
 		17D2DFFE21903364006ACCBE /* otherCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17D2DFFC21903364006ACCBE /* otherCollectionViewCell.xib */; };
+		17DC628621A471C400EC19AA /* splashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC628521A471C400EC19AA /* splashScreenViewController.swift */; };
+		17DC628821A48C4B00EC19AA /* mainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC628721A48C4B00EC19AA /* mainTabbarViewController.swift */; };
 		17E2607321915AB800645032 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E2607221915AB800645032 /* GradientView.swift */; };
 		17FC650F218CB40E00FCA25C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FC650E218CB40E00FCA25C /* Extension.swift */; };
 		17FE3A02219C025C005C2DF2 /* discountCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FE3A00219C025C005C2DF2 /* discountCollectionViewCell.swift */; };
@@ -44,6 +47,7 @@
 		170011AF219D6DCF006C81CE /* informationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = informationTableViewCell.swift; sourceTree = "<group>"; };
 		170011B0219D6DCF006C81CE /* informationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = informationTableViewCell.xib; sourceTree = "<group>"; };
 		170011B3219D72CF006C81CE /* informationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = informationTableViewController.swift; sourceTree = "<group>"; };
+		1700874821ADA7CE006CB6F8 /* tourViewAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tourViewAllViewController.swift; sourceTree = "<group>"; };
 		17021841217DB33B00CC9CD3 /* IHTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IHTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17021844217DB33B00CC9CD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17021846217DB33B00CC9CD3 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 		17BC1AB32199659F005ACAD6 /* AboutSent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutSent.swift; sourceTree = "<group>"; };
 		17D2DFFB21903364006ACCBE /* otherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = otherCollectionViewCell.swift; sourceTree = "<group>"; };
 		17D2DFFC21903364006ACCBE /* otherCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = otherCollectionViewCell.xib; sourceTree = "<group>"; };
+		17DC628521A471C400EC19AA /* splashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splashScreenViewController.swift; sourceTree = "<group>"; };
+		17DC628721A48C4B00EC19AA /* mainTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTabbarViewController.swift; sourceTree = "<group>"; };
 		17E2607221915AB800645032 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		17FC650E218CB40E00FCA25C /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		17FE3A00219C025C005C2DF2 /* discountCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = discountCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -129,6 +135,9 @@
 				17FE3A04219C05D6005C2DF2 /* informationViewController.swift */,
 				170011B3219D72CF006C81CE /* informationTableViewController.swift */,
 				17B89488219EB06A00F99A73 /* infoDetailViewController.swift */,
+				17DC628521A471C400EC19AA /* splashScreenViewController.swift */,
+				17DC628721A48C4B00EC19AA /* mainTabbarViewController.swift */,
+				1700874821ADA7CE006CB6F8 /* tourViewAllViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -271,11 +280,14 @@
 				173FB7A2218F2F8C00B8A0DF /* tourDetailViewController.swift in Sources */,
 				17021845217DB33B00CC9CD3 /* AppDelegate.swift in Sources */,
 				170011B1219D6DCF006C81CE /* informationTableViewCell.swift in Sources */,
+				17DC628821A48C4B00EC19AA /* mainTabbarViewController.swift in Sources */,
 				1795604B2192AA5D00BFE542 /* partnerViewController.swift in Sources */,
 				170011B4219D72CF006C81CE /* informationTableViewController.swift in Sources */,
 				17FC650F218CB40E00FCA25C /* Extension.swift in Sources */,
+				1700874921ADA7CE006CB6F8 /* tourViewAllViewController.swift in Sources */,
 				17B89489219EB06A00F99A73 /* infoDetailViewController.swift in Sources */,
 				179560522192B03F00BFE542 /* partnerDetailTableViewCell.swift in Sources */,
+				17DC628621A471C400EC19AA /* splashScreenViewController.swift in Sources */,
 				17BC1AB4219965A0005ACAD6 /* AboutSent.swift in Sources */,
 				1795604F2192B00800BFE542 /* partnerDetailTableViewController.swift in Sources */,
 				17A09C43218E3FC8000B3476 /* tourTableViewCell.swift in Sources */,

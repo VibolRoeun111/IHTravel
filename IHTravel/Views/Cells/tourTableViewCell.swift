@@ -33,11 +33,12 @@ class tourTableViewCell: UITableViewCell {
         tourPromotionLabel.layer.borderWidth = 1.0
         tourPromotionLabel.layer.cornerRadius = 4
         
-        cornerView.layer.shadowColor = UIColor.color(red: 231, green: 234, blue: 236, alpha: 0.8).cgColor
+        cornerView.layer.cornerRadius = 4.0
+        cornerView.layer.shadowColor = UIColor(white: 0, alpha: 0.5).cgColor
         cornerView.layer.shadowRadius = 4
         cornerView.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
-        cornerView.layer.shadowOpacity = 1.0
         cornerView.layer.masksToBounds = false
+        cornerView.layer.shadowOpacity = 0.4
         
     }
     

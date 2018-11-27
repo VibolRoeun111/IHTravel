@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TJf-Tg-toj">
-                        <rect key="frame" x="16" y="8" width="288" height="291.5"/>
+                        <rect key="frame" x="16" y="6" width="288" height="287.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44N-60-unW">
                                 <rect key="frame" x="8" y="0.0" width="280" height="46"/>
@@ -31,7 +31,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image2" translatesAutoresizingMaskIntoConstraints="NO" id="cGN-pr-ICW">
-                                <rect key="frame" x="16" y="46" width="256" height="229.5"/>
+                                <rect key="frame" x="16" y="46" width="256" height="225.5"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="8"/>
@@ -49,18 +49,13 @@
                             <constraint firstAttribute="trailing" secondItem="cGN-pr-ICW" secondAttribute="trailing" constant="16" id="mbw-km-ofi"/>
                             <constraint firstAttribute="trailing" secondItem="44N-60-unW" secondAttribute="trailing" id="zKv-Pk-za8"/>
                         </constraints>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="8"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="TJf-Tg-toj" secondAttribute="bottom" id="5lr-jG-vlu"/>
+                    <constraint firstAttribute="bottom" secondItem="TJf-Tg-toj" secondAttribute="bottom" constant="6" id="5lr-jG-vlu"/>
                     <constraint firstItem="TJf-Tg-toj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="8UF-vH-CKs"/>
                     <constraint firstAttribute="trailing" secondItem="TJf-Tg-toj" secondAttribute="trailing" constant="16" id="bkd-Ty-oyk"/>
-                    <constraint firstItem="TJf-Tg-toj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="kUB-Aa-azK"/>
+                    <constraint firstItem="TJf-Tg-toj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="kUB-Aa-azK"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

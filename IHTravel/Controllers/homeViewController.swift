@@ -13,6 +13,10 @@ class homeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     let images = ["image1", "image2", "image3", "image4"]
     @IBOutlet weak var discountCollectionView: UICollectionView!
     @IBOutlet weak var tourViewContainer: UIView!
+    
+    @IBOutlet var partnerItemViews: [UIView]!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,12 +24,23 @@ class homeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         navigationController?.navigationBar.shadowImage = UIImage()
         
-        tourViewContainer.layer.cornerRadius = 8
+        tourViewContainer.layer.cornerRadius = 4.0
         tourViewContainer.layer.shadowColor = UIColor(white: 0, alpha: 0.5).cgColor
         tourViewContainer.layer.shadowRadius = 4
         tourViewContainer.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
         tourViewContainer.layer.masksToBounds = false
         tourViewContainer.layer.shadowOpacity = 0.4
+        
+        for view in partnerItemViews {
+            view.layer.cornerRadius = 4.0
+            view.layer.shadowColor = UIColor.color(red: 231, green: 234, blue: 236, alpha: 0.8).cgColor
+            view.layer.shadowRadius = 2
+            view.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+            view.layer.masksToBounds = false
+            view.layer.shadowOpacity = 1.0
+        }
+    
+        
         
         discountCollectionView.register(UINib(nibName: "discountCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "discountCell")
     }

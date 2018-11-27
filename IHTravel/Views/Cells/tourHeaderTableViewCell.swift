@@ -12,5 +12,6 @@ class tourHeaderTableViewCell: UITableViewCell {
 
     @IBOutlet weak var tourHeaderLabel: UILabel!
     
-
+    @IBOutlet weak var tourViewAllButton: UIButton!
+    
 }

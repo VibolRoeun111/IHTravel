@@ -12,7 +12,7 @@ class partnerViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     @IBOutlet weak var tableView: UITableView!
     let titles = ["Restuarant & coffee", "Hotel", "Spa & Massages", "Optic", "Beatuty", "Garage"]
-    
+    var nave_title: String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -40,6 +40,26 @@ class partnerViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
   
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "partnerSegue", sender: nil)
+        
+//        let vc = partnerDetailTableViewController()
+//        vc.name = titles[indexPath.row]
+//        DispatchQueue.main.async {
+//            self.navigationController?.pushViewController(vc, animated: true)
+//        }
+        nave_title = titles[indexPath.row]
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "partnerSegue", sender: nil)
+        }
+        
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "partnerSegue" {
+            if let vc = segue.destination as? partnerDetailTableViewController {
+                vc.name = nave_title
+            }
+        }
     }
 }

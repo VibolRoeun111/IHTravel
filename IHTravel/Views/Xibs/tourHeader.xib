@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,29 +18,40 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0Z-cw-CuY">
-                        <rect key="frame" x="312" y="36.5" width="47" height="28"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <rect key="frame" x="309" y="35.5" width="50" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <state key="normal" title="View all">
                             <color key="titleColor" red="0.81568627449999997" green="0.0078431372550000003" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9J-st-1iE">
-                        <rect key="frame" x="16" y="40" width="39.5" height="19.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <rect key="frame" x="16" y="39" width="40.5" height="22"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="18"/>
+                        <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zqB-rK-g1c">
+                        <rect key="frame" x="0.0" y="98.5" width="375" height="1"/>
+                        <color key="backgroundColor" red="0.90588235289999997" green="0.91764705879999997" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ero-RC-e5I"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="c0Z-cw-CuY" firstAttribute="firstBaseline" secondItem="V9J-st-1iE" secondAttribute="firstBaseline" id="0le-aD-1lY"/>
+                    <constraint firstAttribute="trailing" secondItem="zqB-rK-g1c" secondAttribute="trailing" id="7XQ-Sh-gqB"/>
                     <constraint firstItem="V9J-st-1iE" firstAttribute="leading" secondItem="GAu-Bf-eUj" secondAttribute="leadingMargin" id="D8R-hl-9UY"/>
+                    <constraint firstItem="zqB-rK-g1c" firstAttribute="leading" secondItem="GAu-Bf-eUj" secondAttribute="leading" id="XSC-UG-2gm"/>
                     <constraint firstAttribute="trailing" secondItem="c0Z-cw-CuY" secondAttribute="trailing" constant="16" id="aKu-Sg-GBV"/>
+                    <constraint firstAttribute="bottom" secondItem="zqB-rK-g1c" secondAttribute="bottom" id="nGT-Mm-gda"/>
                     <constraint firstItem="V9J-st-1iE" firstAttribute="centerY" secondItem="GAu-Bf-eUj" secondAttribute="centerY" id="sgl-ND-I9s"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="tourHeaderLabel" destination="V9J-st-1iE" id="vbx-QH-m0K"/>
+                <outlet property="tourViewAllButton" destination="c0Z-cw-CuY" id="WW1-mY-d0b"/>
             </connections>
             <point key="canvasLocation" x="592.79999999999995" y="-141.22938530734635"/>
         </tableViewCell>

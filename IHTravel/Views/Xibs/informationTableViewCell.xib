@@ -34,7 +34,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="កោះឋានសួគ៌-ឆ្នេរសុខសាន្ត" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HwO-MW-Ryd">
-                                <rect key="frame" x="8" y="8" width="196" height="21.5"/>
+                                <rect key="frame" x="8" y="8" width="188" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -53,15 +53,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ig-Xb-C1i">
-                                <rect key="frame" x="260" y="8" width="24" height="24"/>
+                                <rect key="frame" x="256" y="8" width="24" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="Vin-3k-Veq"/>
                                     <constraint firstAttribute="width" constant="24" id="l9L-9v-w7m"/>
                                 </constraints>
-                                <state key="normal" image="send"/>
+                                <state key="normal" image="share-2"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAw-Jm-kqr">
-                                <rect key="frame" x="228" y="8" width="24" height="24"/>
+                                <rect key="frame" x="220" y="8" width="24" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="24" id="QPQ-MQ-9yc"/>
                                     <constraint firstAttribute="height" constant="24" id="W7R-oR-fv8"/>
@@ -82,13 +82,13 @@
                             <constraint firstItem="TtE-Ay-iyh" firstAttribute="top" secondItem="IfN-AU-mdN" secondAttribute="top" id="LG7-9I-qFJ"/>
                             <constraint firstItem="I9q-jO-40Z" firstAttribute="leading" secondItem="MXS-3s-X2S" secondAttribute="trailing" constant="6" id="bQM-yN-JCp"/>
                             <constraint firstAttribute="trailing" secondItem="F4O-2T-kUC" secondAttribute="trailing" id="caC-s0-WXH"/>
-                            <constraint firstAttribute="trailing" secondItem="0ig-Xb-C1i" secondAttribute="trailing" constant="4" id="fKo-gG-Q6V"/>
+                            <constraint firstAttribute="trailing" secondItem="0ig-Xb-C1i" secondAttribute="trailing" constant="8" id="fKo-gG-Q6V"/>
                             <constraint firstAttribute="bottom" secondItem="F4O-2T-kUC" secondAttribute="bottom" id="hbX-9I-Orx"/>
                             <constraint firstItem="F4O-2T-kUC" firstAttribute="leading" secondItem="IfN-AU-mdN" secondAttribute="leading" id="hxb-WL-dFg"/>
                             <constraint firstAttribute="bottom" secondItem="TtE-Ay-iyh" secondAttribute="bottom" id="i5o-up-qLf"/>
                             <constraint firstItem="HwO-MW-Ryd" firstAttribute="leading" secondItem="IfN-AU-mdN" secondAttribute="leading" constant="8" id="lso-dy-4FN"/>
                             <constraint firstItem="MXS-3s-X2S" firstAttribute="leading" secondItem="IfN-AU-mdN" secondAttribute="leading" constant="8" id="maO-Ud-0Tt"/>
-                            <constraint firstItem="0ig-Xb-C1i" firstAttribute="leading" secondItem="pAw-Jm-kqr" secondAttribute="trailing" constant="8" id="rDA-S8-iF9"/>
+                            <constraint firstItem="0ig-Xb-C1i" firstAttribute="leading" secondItem="pAw-Jm-kqr" secondAttribute="trailing" constant="12" id="rDA-S8-iF9"/>
                             <constraint firstItem="I9q-jO-40Z" firstAttribute="centerY" secondItem="MXS-3s-X2S" secondAttribute="centerY" id="sJw-FF-Ab3"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
@@ -119,6 +119,6 @@
         <image name="date" width="64" height="64"/>
         <image name="image2" width="320" height="213"/>
         <image name="like" width="32" height="32"/>
-        <image name="send" width="32" height="32"/>
+        <image name="share-2" width="32" height="32"/>
     </resources>
 </document>

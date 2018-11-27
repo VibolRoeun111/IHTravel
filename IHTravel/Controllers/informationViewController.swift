@@ -10,19 +10,32 @@ import UIKit
 
 class informationViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
-    @IBOutlet weak var informationGridContainier: UIView!
+    @IBOutlet var informationTitle: [UILabel]!
+    
+    @IBOutlet var informationViews: [UIView]!
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    var view_title: String = ""
     
     let images = ["image1", "image2", "image3", "image4"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
         collectionView.register(UINib(nibName: "discountCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "discountCell")
-        informationGridContainier.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleGestureVeiw)))
         
         //get rid of navigation underline
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         navigationController?.navigationBar.shadowImage = UIImage()
+        
+        for view in informationViews {
+            view.layer.cornerRadius = 4.0
+            view.layer.shadowColor = UIColor.color(red: 231, green: 234, blue: 236, alpha: 0.8).cgColor
+            view.layer.shadowRadius = 2
+            view.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+            view.layer.masksToBounds = false
+            view.layer.shadowOpacity = 1.0
+            view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleGestureVeiw(_:))))
+        }
      
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -39,8 +52,24 @@ class informationViewController: UIViewController, UICollectionViewDataSource, U
         return CGSize(width: collectionView.frame.width - 100, height: collectionView.frame.height)
     }
     
-    @objc func handleGestureVeiw(){
-        performSegue(withIdentifier: "informationSegue", sender: nil)
+    @objc func handleGestureVeiw(_ sender: UITapGestureRecognizer){
+        
+        view_title = informationTitle[(sender.view?.tag)!].text!
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "informationSegue", sender: nil)
+        }
+        
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "informationSegue" {
+            if let vc = segue.destination as? informationTableViewController {
+                
+                vc.nav_title = view_title
+            }
+        }
+        
+    }
+    
 }

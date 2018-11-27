@@ -10,9 +10,12 @@ import UIKit
 
 class partnerDetailTableViewController: UITableViewController {
 
+    var name: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.title = name
         tableView.register(UINib(nibName: "partnerDetailTableViewCell", bundle: nil), forCellReuseIdentifier: "partnerDetailCell")
     }
 

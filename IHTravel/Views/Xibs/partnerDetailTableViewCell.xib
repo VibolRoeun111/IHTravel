@@ -19,16 +19,16 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rfv-Dx-41x">
-                        <rect key="frame" x="16" y="8" width="288" height="167.5"/>
+                        <rect key="frame" x="16" y="6" width="288" height="163.5"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="B7e-dT-O8Z">
-                                <rect key="frame" x="8" y="8" width="276" height="151.5"/>
+                                <rect key="frame" x="8" y="8" width="276" height="147.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Qta-YR-zBT">
-                                        <rect key="frame" x="0.0" y="0.0" width="120" height="151.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="147.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="ZHU-8n-FZX">
-                                                <rect key="frame" x="0.0" y="0.0" width="120" height="151.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="147.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="120" id="pkJ-6y-1OV"/>
                                                 </constraints>
@@ -41,7 +41,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uPV-WO-031">
-                                        <rect key="frame" x="126" y="14.5" width="150" height="123"/>
+                                        <rect key="frame" x="126" y="12.5" width="150" height="123"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Champa Restaurant" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3F-Va-U1a">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="20.5"/>
@@ -113,17 +113,12 @@
                             <constraint firstAttribute="bottom" secondItem="B7e-dT-O8Z" secondAttribute="bottom" constant="8" id="mHr-Un-WTw"/>
                             <constraint firstItem="B7e-dT-O8Z" firstAttribute="top" secondItem="Rfv-Dx-41x" secondAttribute="top" constant="8" id="xeu-kl-eBR"/>
                         </constraints>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="8"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="Rfv-Dx-41x" secondAttribute="trailing" constant="16" id="Hpe-Ek-ouj"/>
-                    <constraint firstAttribute="bottom" secondItem="Rfv-Dx-41x" secondAttribute="bottom" id="aa1-0E-jC7"/>
-                    <constraint firstItem="Rfv-Dx-41x" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="hKh-oG-PO5"/>
+                    <constraint firstAttribute="bottom" secondItem="Rfv-Dx-41x" secondAttribute="bottom" constant="6" id="aa1-0E-jC7"/>
+                    <constraint firstItem="Rfv-Dx-41x" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="hKh-oG-PO5"/>
                     <constraint firstItem="Rfv-Dx-41x" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="uu9-yt-mkq"/>
                 </constraints>
             </tableViewCellContentView>

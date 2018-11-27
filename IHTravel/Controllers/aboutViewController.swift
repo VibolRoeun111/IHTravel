@@ -23,18 +23,20 @@ class aboutViewController: UIViewController {
         super.viewDidLoad()
 
         setupSadow()
+        viewContainer.layer.cornerRadius = 8.0
     }
     
     func setupSadow(){
         
         //get rid of navigation underline
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+    navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         navigationController?.navigationBar.shadowImage = UIImage()
         viewContactContainer.layer.shadowColor = UIColor.color(red: 231, green: 234, blue: 236, alpha: 0.8).cgColor
-        viewContactContainer.layer.shadowRadius = 4
+        viewContactContainer.layer.shadowRadius = 2
         viewContactContainer.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
         viewContactContainer.layer.shadowOpacity = 1.0
         viewContactContainer.layer.masksToBounds = false
+        viewContactContainer.layer.cornerRadius = 4
         
         //contact TextView
         contactMessageTextView.layer.borderColor = UIColor.lightGray.cgColor
@@ -66,9 +68,6 @@ class aboutViewController: UIViewController {
             }, completion: nil)
             
         }
-    }
-    @IBAction func handleDimiss(_ sender: Any) {
-        dimissBlack()
     }
     
     @objc func dimissBlackview(){

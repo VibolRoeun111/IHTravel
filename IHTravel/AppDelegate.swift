@@ -18,8 +18,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
- 
+        
         return true
+    }
+    
+    func replaceWindow(_ newWindow: UIWindow) {
+        if let oldWindow = window {
+            newWindow.frame = oldWindow.frame
+            newWindow.windowLevel = oldWindow.windowLevel
+            newWindow.screen = oldWindow.screen
+            newWindow.isHidden = false
+            window = newWindow
+            oldWindow.removeFromSuperview()
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

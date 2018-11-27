@@ -10,8 +10,9 @@ import UIKit
 
 class infoDetailViewController: UIViewController {
 
-    @IBOutlet weak var titleLabel: UILabel!
+    var nav_infodetail:String = ""
     
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var informaitonTitleLabel: UILabel!
@@ -20,11 +21,13 @@ class infoDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.titleLabel.text = nav_infodetail
+        
         titleContainer.layer.shadowColor = UIColor.color(red: 231, green: 234, blue: 236, alpha: 0.8).cgColor
-        titleContainer.layer.shadowRadius = 4
+        titleContainer.layer.shadowRadius = 2
         titleContainer.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
         titleContainer.layer.shadowOpacity = 1.0
-        titleContainer.layer.cornerRadius = 6.0
+        titleContainer.layer.cornerRadius = 4.0
         titleContainer.layer.masksToBounds = false
         
     }

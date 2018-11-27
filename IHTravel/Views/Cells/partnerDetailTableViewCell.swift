@@ -21,10 +21,11 @@ class partnerDetailTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         viewContainer.layer.shadowColor = UIColor.color(red: 231, green: 234, blue: 236, alpha: 0.8).cgColor
-        viewContainer.layer.shadowRadius = 4
+        viewContainer.layer.shadowRadius = 2
         viewContainer.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
         viewContainer.layer.shadowOpacity = 1.0
         viewContainer.layer.masksToBounds = false
+        viewContainer.layer.cornerRadius = 4.0
         
     }
 
